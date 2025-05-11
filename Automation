@@ -1,0 +1,35 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class DemoBlazeTest {
+
+    private WebDriver driver;
+
+    @BeforeClass
+    public void setUp() {
+        // تأكد من ضبط مسار WebDriver المناسب لنظامك
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+        // فتح الموقع الجديد
+        driver.get("https://www.demoblaze.com/index.html");
+    }
+
+    @Test
+    public void verifyHomePageTitle() {
+        String expectedTitle = "STORE";
+        String actualTitle = driver.getTitle();
+        assert actualTitle.contains(expectedTitle) : "العنوان غير متوقع: " + actualTitle;
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
