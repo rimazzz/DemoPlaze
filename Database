@@ -1,0 +1,13 @@
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    category TEXT NOT NULL,
+    price REAL NOT NULL
+);
+
+-- إضافة منتجات (محاكاة لبيانات Demoblaze)
+INSERT INTO products (id, name, category, price) VALUES
+(1, 'Samsung galaxy s6', 'Phones', 360.00),
+(2, 'Sony xperia z5', 'Phones', 320.00),
+(3, 'Apple monitor 24', 'Monitors', 400.00),
+(4, 'MacBook air', 'Laptops', 700.00);
