@@ -198,10 +198,10 @@ Once these prerequisites are set up, you can proceed with configuring and execut
 - For GitHub Actions: Ensure the `github/workflows` folder has a valid YAML configuration.
 
 #### ✅ Setup Complete!
-Now you can run automated tests on LiteCart to validate UI, API, and performance, ensuring a smooth and reliable shopping experience! 🛒🚀✅
+Now you can run automated tests on Demoplaze to validate UI, API, and performance, ensuring a smooth and reliable shopping experience! 🛒🚀✅
        
 ### 🚨 **Reports for LiteCart Automated Testing Suite**:
-The LiteCart Automated Testing Suite generates various reports to track test execution, identify failures, and analyze system performance. These reports help maintain the stability, reliability, and efficiency of the platform.
+The Demoplaze Automated Testing Suite generates various reports to track test execution, identify failures, and analyze system performance. These reports help maintain the stability, reliability, and efficiency of the platform.
 
 ## 🌟 **Visual Features**
 
@@ -268,7 +268,7 @@ We welcome contributions! 🎉 Whether you're improving test cases, fixing bugs,
    
 - **2. Clone Your Fork**
     ```bash
-    git clone https://github.com/YourUsername/LiteCartTestingSuite.git  
+    git clone https://github.com/YourUsername/DemoplazeTestingSuite.git  
     cd LiteCartTestingSuite  
      ```
 - **3. Create a New Branch**
